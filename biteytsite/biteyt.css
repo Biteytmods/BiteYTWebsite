@@ -15,10 +15,10 @@ body {
 }
 
 #pm {
+    color: #fff;
     display: block;
     width: auto;
     text-align: center;
-    margin-top: 50px;
     font-size: 50px;
     text-shadow: 1px 1px 10px gray;
 }
@@ -32,6 +32,7 @@ body {
 
 .header.scrolled {
     background-color: black;
+    box-shadow: 1px 1px 10px #000
 }
 
 #info {
@@ -47,7 +48,7 @@ body {
     user-select: none;
     z-index: 999;
     position: fixed;
-    transition: background-color 300ms ease-in-out;
+    transition: 300ms ease-in-out;
 }
 
 .header h1 {
@@ -92,7 +93,7 @@ body {
     font-size: 50px;
     margin: 0;
     width: 100%;
-    height: 750px;
+    height: 100vh;
     background-image: url(images/biteyt.svg);
     display: flex;
     justify-content: center;
@@ -114,7 +115,10 @@ body {
     font-size: 20px;
 }
 .pricing {
-    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     border-bottom: 1px solid #BF0000;
 }
 
@@ -154,7 +158,10 @@ a {
 }
 
 .payment {
-    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     border-bottom: 1px solid #BF0000;
 }
 
@@ -189,7 +196,10 @@ a {
 }
 
 .contact {
-    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     position: relative;
 }
 
