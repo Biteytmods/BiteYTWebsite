@@ -304,6 +304,7 @@ a:hover {
     
     .copyright {
         transition: color 300ms ease-in-out;
+        width: 100%
     }
 
     .copyright-wrapper {
