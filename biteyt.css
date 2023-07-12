@@ -14,7 +14,7 @@ video {
 }
 
 a {
-    transition: color .3s;
+    transition: color 0.3s;
 }
 
 a:hover {
