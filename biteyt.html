@@ -9,61 +9,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
 </head>
-<script>
-    //navbar scroll
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('.header');
-        const scrolled = window.scrollY > 10;
-        header.classList.toggle('scrolled', scrolled);
-    });
-</script>
 <body>
-    <div class="header">
-        <h1>Agar.io BiteYt VIP Mod Menu</h1>
-        <ul>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#payment-methods">Payment Methods</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="main"><span>The Best Mod Menu On Android</span></div>
-    <div class="pricing"  id="pricing">
-        <div class="price-wrapper">
-        <span>Pricing</span>
-            <ul class="left">
-                <li>30 Days</li>
-                <li>60 Days</li>
-                <li>365 Days</li>
-            </ul>
-            <ul class="right">
-                <li>$5.00</li>
-                <li>$10.00</li>
-                <li>$50.00</li>
+    <nav>
+        <div class="logo">
+            <span style="font-size: 32px;">Agar.io BiteYt VIP Mod Menu</span>
+        </div>
+        <div class="navigator">
+            <ul>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#payment-methods">Payment Methods</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
-    </div>
-    <div class="payment" id="payment-methods">
-        <div class="payment-wrapper">
-            <span id="pm">Payment Methods</span>
-        <ul>
-            <li><img src="images/paypal-removebg-preview.png">PayPal</li>
-        </ul>
-        <span id="info">For further information about payment methods, please visit our <a class="inv" href="https://discord.gg/Hcn9p5Vnrd">Discord Server</a></span>
-        </div>  
-    </div>
-    <div class="contact"  id="contact">
-        <div class="contact-wrapper">
-            <span id="pm">Contact Us</span>
-        <a href="https://discord.gg/Hcn9p5Vnrd" id="dc-link" target="_blank">Click Here To Join Our Discord And Buy Yourself A VIP Key</a>
-        <div id="dc-logo-wrapper" href="https://discord.gg/Hcn9p5Vnrd" target="_blank"><a href="https://discord.gg/Hcn9p5Vnrd" target="_blank"><img src="images/discord-removebg-preview.png" alt="dc logo"></a></div>
+    </nav>
+    <main>
+        <section id="main">
+            <video id="bg-vid" src="images/main_bg.mp4" autoplay muted loop></video>
+            <div class="main">
+                <h1 id="mainn">The Best Mod Menu On Android</h1>
+            </div>
+        </section>
+        <section id="pricing">
+            <div class="pricing">
+                <div class="price-wrapper hidden">
+                <b class="hidden">Pricing</b>
+                    <table class="hidden">
+                        <tr class="hidden">
+                            <th>Time</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr class="hidden">
+                            <td>30 Days</td><br>
+                            <td>$4.99</td><br>
+                        </tr>
+                        <tr class="hidden">
+                            <td>60 Days</td>
+                            <td>$9.99</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>365 Days</td>
+                            <td>$49.99</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    <section>
+        <div class="payment" id="payment-methods">
+            <div class="payment-wrapper hidden">
+                <b id="pm">Payment Methods</b>
+            </div>
+            <div style="display: flex; margin: auto; justify-content: center; align-items: center">
+                <div style="display: block; width: 100%; height: auto; text-align: center;" class="hidden">
+                    <ul style="display: block; margin-bottom: 50px;" class="hidden">
+                        <li style="margin-bottom: 15px;" class="hidden">&bull; PayPal</li>
+                        <li class="hidden">&bull; Website (Soon)</li>
+                    </ul>
+                <span id="info" class="hidden">For more information about payment methods, visit our <a class="hidden" href="https://discord.gg/Hcn9p5Vnrd">Discord Server</a></span>
+                </div>
+            </div>  
         </div>
-    </div>
-    <div class="copyright">
-        <div class="copyright-wrapper">
-            <span>© 2023 BiteYtMods</span>
-            <a id="credits" href="https://youtube.com/@iReaper" target="_blank">Site Made By <u>@cinxrkk</u></a>
+    </section>
+    <section>
+        <div class="contact"  id="contact">
+            <div id="contact-wrapper hidden">
+                <b class="hidden">Contact Us</b>
+            </div>
+            <div style="display: flex; margin: auto; justify-content: center; align-items: center" class="hidden">
+                <div style="display: block; width: 60%; height: auto; text-align: center;">
+                    <a href="https://discord.gg/Hcn9p5Vnrd" id="dc-link" target="_blank" style="text-decoration: none;">Click Here To Join Our Discord And Buy Yourself A VIP Key</a>
+                    <img src="images/discord-removebg-preview.png" alt="dc logo" style=" margin-top: 50px;">
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+</main>
+    <footer>
+        <div class="copyright">
+            <div class="copyright-wrapper">
+                <span>© 2023 BiteYtMods | </span>
+                 <span>Site Made By </span><a id="credits" href="https://discord.gg/E8eXdkUhqJ" target="_blank" style="letter-spacing: 1px;">@cinxrkk</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
