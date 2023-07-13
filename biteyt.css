@@ -109,6 +109,8 @@ section div {
 #pricing table {
     max-width: 500px;
     max-height: 200px;
+    width: 500px;
+    height: 200px;
     text-align: center;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -118,6 +120,10 @@ section div {
 section b {
     display: block;
     font-size: 52px;
+}
+
+section {
+    border-bottom: 3px solid #042a72;
 }
 
 footer {
@@ -136,9 +142,10 @@ img {
 }
 
 .hidden {
-    transition: 3s;
+    transition: 1s;
     opacity: 0;
 }
+
 
 .shown {
     opacity: 1;
@@ -148,7 +155,7 @@ img {
 }
 
 @keyframes scrollAnim {
-    0%{transform: translateX(-50%);}
+    0%{transform: translateX(-30%);}
     100%{transform: translatex(0%);}
 }
 
@@ -172,12 +179,22 @@ img {
 
     section {
         position: relative;
-        border-bottom: 3px solid #042a72;
         height: 100vh;
     }
 
     section div {
         display: block;
+    }
+
+    #pricing table {
+        max-width: 99%;
+        max-height: 200px;
+        width: 99%;
+        height: 200px;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 15px 0;
     }
 
     #payment-methods, .payment-wrapper {
@@ -204,6 +221,9 @@ img {
     table {
         width: 100%;
         margin-top: 200px;
+        height: 200px;
+        max-width: 100%;
+        max-height: 200px;
     }
 
     section b {
