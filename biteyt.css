@@ -38,10 +38,10 @@ nav {
     width: 100%;
     padding: 30px 0;
     z-index: 99999999;
+    backdrop-filter: blur(5px);
 }
 
 .scrolled {
-    background-color: #000000;
     padding: 20px 0;
     box-shadow: 2px 2px 20px #042a72;
 }
@@ -142,8 +142,9 @@ img {
 }
 
 .hidden {
-    transition: 1s;
+    transition: 0.5s;
     opacity: 0;
+    filter: blur(5px);
 }
 
 
@@ -152,6 +153,7 @@ img {
     transition: 3s;
     animation-name: scrollAnim;
     animation-duration: 1s;
+    filter: blur(0);
 }
 
 @keyframes scrollAnim {
