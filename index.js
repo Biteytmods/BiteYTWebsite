@@ -4,9 +4,9 @@ window.addEventListener('scroll', function() {
     nav.classList.toggle('scrolled', scrolled);
 });
 
-const observer  = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('shown');
             entry.target.classList.remove('hidden');
         } else {
