@@ -5,93 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bite YT VIP Mod Menu</title>
-    <link rel="stylesheet" href="biteyt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script defer src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <span>Agar.io BiteYt VIP Mod Menu</span>
-        </div>
-        <div class="navigator">
-            <ul>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#payment-methods">Payment Methods</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar shadow bg-light text-bg-light" data-bs-theme="light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    Bite YT VIP Mod Menu
+                </a>
+                <div class="navbar navbar-expand">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Payment Methods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>    
     <main>
-        <section id="main">
-            <video id="bg-vid" src="images/main_bg.mp4" autoplay muted loop></video>
-            <div class="main" style="display: flex; align-items: center">
-                <h1 id="mainn">The Best Mod Menu On Android</h1>
+        <section>
+            <div class="container-sm rounded shadow-lg my-5 p-4 justify-content-center text-center bg-light text-bg-light" style="height: 40vh;">
+                <h1>The Best Mod Menu On Android</h1>
+                <p class="mt-5" style="text-align: left;">Introducing the finest Agar.io mod menu for Android, boasting a wide array of features that revolutionize the gameplay experience. Our mod menu stands out as the premier choice for Agar.io enthusiasts, offering an unrivaled level of convenience and excitement. With our menu, players gain access to an impressive set of tools designed to enhance their gameplay. Zoom functionality allows for a greater field of vision, providing a strategic advantage over opponents. The fast feed feature enables quick and efficient consumption of pellets, ensuring swift growth and domination on the leaderboard. Moreover, our custom skin injector allows players to personalize their agar.io experience by injecting unique skins, making every game truly their own. With our mod menu, Agar.io becomes a more accessible and enjoyable game for everyone, empowering players to unleash their full potential.</p>
             </div>
         </section>
-        <section id="pricing">
-            <div class="pricing">
-                <div class="price-wrapper hidden">
-                <b class="hidden">Pricing</b>
-                    <table class="hidden">
-                        <tr class="hidden">
-                            <th>Time</th>
-                            <th>Price</th>
-                        </tr>
-                        <tr class="hidden">
-                            <td>30 Days</td><br>
-                            <td>$4.99</td><br>
-                        </tr>
-                        <tr class="hidden">
-                            <td>60 Days</td>
-                            <td>$9.99</td>
-                        </tr>
-                        <tr class="hidden">
-                            <td>365 Days</td>
-                            <td>$49.99</td>
-                        </tr>
-                    </table>
-                </div>
+        <section>
+            <div class="container-sm rounded shadow-lg container-sm bg-light text-bg-light text-center p-5 my-5">
+                <h1 class="mb-5">Pricing</h1>
+                <table class="rounded table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>30 Days</td>
+                        <td>$4.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>60 Days</td>
+                        <td>$9.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>365 Days</td>
+                        <td>$49.99</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
         </section>
     <section>
-        <div class="payment" id="payment-methods">
-            <div class="payment-wrapper hidden">
-                <b id="pm" class="hidden">Payment Methods</b>
+        <div class="rounded shadow-lg container-sm bg-light text-bg-light text-center">
+            <div>
+                <h1>Payment Methods</h1>
             </div>
-            <div style="display: flex; margin: auto; justify-content: center; align-items: center">
-                <div style="display: block; width: 100%; height: auto; text-align: center;" class="hidden">
-                    <ul style="display: block; margin-bottom: 50px;" class="hidden">
-                        <li style="margin-bottom: 15px;" class="hidden">&bull; PayPal</li>
-                        <li class="hidden">&bull; Website (Soon)</li>
-                    </ul>
-                <span id="info" class="hidden">For more information about payment methods, visit our <a class="hidden" href="https://discord.gg/Hcn9p5Vnrd">Discord Server</a></span>
+            <div>
+                <div>
+                    <ol class="list-group list-group-numbered p-5">
+                        <li class="list-group-item">PayPal</li>
+                        <li class="list-group-item">Website (Soon)</li>
+                    </ol>
+                    <span class="mb-5">For more information about payment methods, visit our Discord server</span>
                 </div>
             </div>  
         </div>
     </section>
     <section>
-        <div class="contact"  id="contact">
-            <div class="contact-wrapper hidden">
-                <b class="hidden">Contact Us</b>
+        <div class="container-sm rounded shadow-lg container-sm bg-light text-bg-light text-center p-5 my-5">
+            <div>
+                <h1 class="mb-3">Contact Us</h1>
             </div>
-            <div style="display: flex; margin: auto; justify-content: center; align-items: center" class="hidden a1">
-                <div style="display: block; width: 60%; height: auto; text-align: center;">
-                    <a class="hidden" href="https://discord.gg/Hcn9p5Vnrd" id="dc-link" target="_blank" style="text-decoration: none;">Click Here To Join Our Discord And Buy Yourself A VIP Key</a>
-                    <img src="images/discord-removebg-preview.png" alt="dc logo" style=" margin-top: 50px; transition: color 0.3s ease;" class="hidden">
+            <div>
+                <div>
+                    <img src="images/discord-removebg-preview.png" alt="dc-img" class="img-sm my-5" style="width: 150px; height: 100px;">
+                    <a href="https://discord.gg/Hcn9p5Vnrd"target="_blank" class="link-underline d-block mb-5">Click Here To Join Our Discord And Buy Yourself A VIP Key</a>
                 </div>
             </div>
         </div>
     </section>
 </main>
-    <footer>
-        <div class="copyright">
-            <div class="copyright-wrapper">
-                <span>© 2023 BiteYtMods | </span>
-                 <span>Site Made By </span><a id="credits" href="https://discord.gg/E8eXdkUhqJ" target="_blank" style="letter-spacing: 1px;">@cinxrkk</a>
-            </div>
+    <footer class="container-fluid text-center p-3 bg-light shadow-lg">
+        <div>
+            <span>© 2023 BiteYtMods | </span>
+            <span>Site Made By </span><a href="https://discord.gg/E8eXdkUhqJ" target="_blank">@cinxrkk</a>
         </div>
     </footer>
 </body>
