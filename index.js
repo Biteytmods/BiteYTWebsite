@@ -20,12 +20,11 @@ elementsToObserve.forEach((element) => {
 
 document.addEventListener('DOMContentLoaded', function() {
   const themeSwitch = document.getElementById('themeSwitch');
-  const lightElements = document.querySelector("html")
+  const lightElements = document.querySelector("html");
 
   themeSwitch.addEventListener('change', function() {
     if (this.checked) {
-      lightElements.setAttribute('data-bs-theme', 'dark')
-      });
+      lightElements.setAttribute('data-bs-theme', 'dark');
     }
   });
 });
