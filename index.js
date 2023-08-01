@@ -20,20 +20,11 @@ elementsToObserve.forEach((element) => {
 
 document.addEventListener('DOMContentLoaded', function() {
   const themeSwitch = document.getElementById('themeSwitch');
-  const lightElements = document.querySelectorAll('div');
+  const lightElements = document.querySelector("html")
 
   themeSwitch.addEventListener('change', function() {
     if (this.checked) {
-      document.body.style.backgroundColor = '#3b3b3b'
-      lightElements.forEach(function(element) {
-        element.classList.replace('bg-light', 'bg-dark');
-        element.classList.replace('text-bg-light', 'text-bg-dark');
-      });
-    } else {
-      lightElements.forEach(function(element) {
-        document.body.style.backgroundColor = 'rgb(238, 238, 238)'
-        element.classList.replace('bg-dark', 'bg-light');
-        element.classList.replace('text-bg-dark', 'text-bg-light');
+      lightElements.setAttribute('data-bs-theme', 'dark')
       });
     }
   });
