@@ -21,10 +21,15 @@ elementsToObserve.forEach((element) => {
 document.addEventListener('DOMContentLoaded', function() {
   const themeSwitch = document.getElementById('themeSwitch');
   const lightElements = document.querySelector("html");
+  const logo = document.querySelector('.switch-logo');
 
   themeSwitch.addEventListener('change', function() {
     if (this.checked) {
       lightElements.setAttribute('data-bs-theme', 'dark');
+      logo.style.background = 'url(images/moon.svg)';
+    } else {
+      lightElements.setAttribute('data-bs-theme', 'light');
+      logo.style.background = 'url(images/sun.svg)';
     }
   });
 });
