@@ -44,10 +44,21 @@
         }
 
         .switch-logo {
-          background: url(images/sun.svg);
+          transition: .5s ease-in-out;
+          background: url(images/moon.svg);
           margin-right: 20px;
           width: 30px;
           height: 30px;
+        }
+
+        .switch-logo:hover {
+            transform: rotate(-1turn);
+            cursor: pointer;
+        }
+
+        h1,
+        span {
+          transition: .2s ease!important;
         }
 
         #mode-switch {
@@ -86,9 +97,7 @@
               </li>
             </ul>
           </div>
-          <div class="form-check form-switch" id="mode-switch">
-          <div class="switch-logo"></div>
-            <input class="form-check-input" style="width: 55px; height: 30px;" type="checkbox" id="themeSwitch">
+          <div class="switch-logo" id="themeSwitch"></div>
           </div>
         </div>
       </nav>
@@ -158,7 +167,7 @@
         </div>
     </section>
 </main>
-    <footer class="container-fluid text-center p-3">
+    <footer class="container-fluid text-center p-3 shadow-lg">
         <div>
             <span>© 2023 BiteYtMods | </span>
             <span>Site Made By </span><a href="https://discord.gg/DnT8frkPwY" class="link-underline-opacity-0 link-underline" target="_blank">@cinxrkk</a>
