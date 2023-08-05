@@ -47,3 +47,5 @@ window.addEventListener('scroll', function() {
     nav.classList.remove('shadow');
   }
 });
+
+document.write(1 % 2)

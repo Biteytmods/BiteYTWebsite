@@ -10,70 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="biteyt.css">
     <script defer src="index.js"></script>
-    <style>
-
-        nav {
-            transition: .3s ease;
-            backdrop-filter: blur(5px);
-        }
-
-        #logo:hover {
-            transform: scale(1.25,1.25);
-        }
-
-        #logo {
-            transition: 2s;
-        }
-
-        div, body {
-            transition: .4s ease;
-        }
-
-        .hidden {
-            opacity: 0;
-            transform: translateY(50%);
-            filter: blur(5px);
-        }
-
-        .shown {
-          transition: .5s;
-            opacity: 1;
-            transform: translateY(0);
-            filter: blur(0);
-        }
-
-        .switch-logo {
-          transition: .5s ease-in-out;
-          background: url(images/moon.svg);
-          margin-right: 20px;
-          width: 30px;
-          height: 30px;
-        }
-
-        .switch-logo:hover {
-            transform: rotate(-1turn);
-            cursor: pointer;
-        }
-
-        h1,
-        span {
-          transition: .2s ease!important;
-        }
-
-        #mode-switch {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          width: 100px;
-          padding: 0;
-          justify-content: space-between;
-        }
-
-        .navbar-brand {
-          margin: 0;
-        }
-    </style>
 </head>
 <body id="bbooddyy">
     <nav class="navbar z-3 container-fluid position-fixed top-0 navbar-expand-lg bg-body-tertiary">
@@ -101,69 +39,71 @@
           </div>
         </div>
       </nav>
-    <main>
+    <main class="d-flex flex-column gap-5 mb-5">
         <section class="hidden" id="home" style="margin-top: 130px;">
-            <div class="container-sm rounded shadow my-5 p-5 justify-content-center text-center">
+            <div class="container-sm d-flex flex-column rounded shadow-lg p-5 text-center gap-5">
                 <h1>The Best Mod Menu On Android</h1>
-                <p class="mt-5" style="text-align: left;">Introducing the finest Agar.io mod menu for Android, boasting a wide array of features that revolutionize the gameplay experience. Our mod menu stands out as the premier choice for Agar.io enthusiasts, offering an unrivaled level of convenience and excitement. With our menu, players gain access to an impressive set of tools designed to enhance their gameplay. Zoom functionality allows for a greater field of vision, providing a strategic advantage over opponents. The fast feed feature enables quick and efficient consumption of pellets, ensuring swift growth and domination on the leaderboard. Moreover, our custom skin injector allows players to personalize their agar.io experience by injecting unique skins, making every game truly their own. With our mod menu, Agar.io becomes a more accessible and enjoyable game for everyone, empowering players to unleash their full potential.</p>
+                <p style="text-align: left;">Introducing the finest Agar.io mod menu for Android, boasting a wide array of features that revolutionize the gameplay experience. Our mod menu stands out as the premier choice for Agar.io enthusiasts, offering an unrivaled level of convenience and excitement. With our menu, players gain access to an impressive set of tools designed to enhance their gameplay. Zoom functionality allows for a greater field of vision, providing a strategic advantage over opponents. The fast feed feature enables quick and efficient consumption of pellets, ensuring swift growth and domination on the leaderboard. Moreover, our custom skin injector allows players to personalize their agar.io experience by injecting unique skins, making every game truly their own. With our mod menu, Agar.io becomes a more accessible and enjoyable game for everyone, empowering players to unleash their full potential.</p>
             </div>
         </section>
         <section class="hidden" id="pricing">
-            <div class="container-sm rounded shadow text-center p-5 my-5">
-                <h1 class="mb-5">Pricing</h1>
-                <div class="rounded" style="overflow: hidden;">
-                    <table class="rounded table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">Time</th>
-                        <th scope="col">Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>30 Days</td>
-                        <td>$4.99</td>
-                      </tr>
-                      <tr>
-                        <td>60 Days</td>
-                        <td>$9.99</td>
-                      </tr>
-                      <tr>
-                        <td>365 Days</td>
-                        <td>$49.99</td>
-                      </tr>
-                    </tbody>
-                    </table>
-                </div>
+            <div class="container-sm rounded shadow-lg text-center p-5 d-flex justify-content-center flex-column gap-5">
+                <h1>Pricing</h1>
+                <table class="rounded table table-bordered table-striped w-50 m-0 align-self-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>30 Days</td>
+                    <td>$4.99</td>
+                  </tr>
+                  <tr>
+                    <td>60 Days</td>
+                    <td>$9.99</td>
+                  </tr>
+                  <tr>
+                    <td>365 Days</td>
+                    <td>$49.99</td>
+                  </tr>
+                </tbody>
+                </table>
             </div>
         </section>
     <section class="hidden" id="payment-methods">
-        <div class="rounded shadow container-sm text-center p-5">
-            <div>
-                <h1>Payment Methods</h1>
-            </div>
-            <div>
-                <div>
-                    <ol class="list-group list-group-numbered p-5">
-                        <li class="list-group-item">PayPal</li>
-                        <li class="list-group-item">Website (Soon)</li>
-                    </ol>
-                    <span class="mb-5">For more information about payment methods, visit our Discord server</span>
-                </div>
-            </div>  
+        <div class="rounded shadow-lg container-sm text-center p-5 d-flex justify-content-center flex-column gap-5">
+          <h1>Payment Methods</h1>
+          <ol class="list-group list-group-numbered w-50 align-self-center">
+            <li class="list-group-item">PayPal</li>
+            <li class="list-group-item">Website (Soon)</li>
+          </ol>
+          <span>For more information about payment methods, contact us</span>
         </div>
     </section>
     <section class="hidden" id="contact-us">
-        <div class="container-sm rounded shadow text-center p-5 my-5">
-            <div>
-                <h1 class="mb-3">Contact Us</h1>
+        <div class="container-sm rounded shadow-lg text-center p-5 d-flex justify-content-center flex-column gap-5">
+          <h1>Contact Us</h1>
+          <div class="d-flex flex-column gap-3 w-auto align-self-center">
+            <div class="d-flex align-self-start gap-3 align-items-center">
+              <img src="images/dc-logo.svg" alt="dc-logo" style="width: 2rem; height: 2rem;">
+              <a href="https://discord.com/invite/biteyt" target="_blank">Discord Server</a>
             </div>
-            <div>
-                <div>
-                    <img src="images/discord-removebg-preview.png" alt="dc-img" class="img-sm my-5" style="width: 150px; height: 100px;">
-                    <a href="https://discord.gg/Hcn9p5Vnrd"target="_blank" class="link-underline d-block mb-5">Click Here To Join Our Discord And Buy Yourself A VIP Key</a>
-                </div>
+            <div class="d-flex align-self-start gap-3 align-items-center">
+              <img src="images/ig-logo.svg" alt="ig-logo" style="width: 2rem; height: 2rem;">
+              <a href="https://www.instagram.com/mgbite.yt/" target="_blank">Instagram Account</a>
             </div>
+            <div class="d-flex align-self-start gap-3 align-items-center">
+              <img src="images/yt-logo.svg" alt="yt-logo" style="width: 2rem; height: 2rem;">
+              <a href="https://www.youtube.com/@BiteYt69" target="_blank">Youtube Channel</a>
+            </div>
+            <div class="d-flex align-self-start gap-3 align-items-center">
+              <img src="images/mail.svg" alt="mail-logo" style="width: 2rem; height: 2rem;">
+              <a href="mailto:somtirthasarkar26@gmail.com" target="_blank">Mail Us</a>
+            </div>
+          </div>
         </div>
     </section>
 </main>
