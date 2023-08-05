@@ -9,6 +9,7 @@ nav {
 
 #logo {
     transition: 2s;
+    margin-right: 1rem;
 }
 
 div, body {
@@ -29,8 +30,10 @@ div, body {
 }
 
 .switch-logo {
+    width: 2rem;
+    height: 2rem;
     transition: .5s ease-in-out;
-    background: url(images/moon.svg);
+    background: url(images/moon.svg) no-repeat;
 }
 
 .switch-logo:hover {
@@ -41,14 +44,6 @@ div, body {
 h1,
 span {
     transition: .2s ease!important;
-}
-
-#mode-switch {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    justify-content: space-between;
 }
 
 .navbar-brand {
