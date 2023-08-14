@@ -42,8 +42,8 @@ window.addEventListener('scroll', function() {
   var nav = document.querySelector('nav');
 
   if (window.scrollY > 0) {
-    nav.classList.add('shadow');
+    nav.classList.add('shadow-lg');
   } else {
-    nav.classList.remove('shadow');
+    nav.classList.remove('shadow-lg');
   }
 });
