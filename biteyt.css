@@ -1,51 +1,71 @@
 nav {
-    transition: .3s ease;
-    backdrop-filter: blur(5px);
-}
-
-#logo:hover {
-    transform: scale(1.25,1.25);
+  transition: 0.3s ease;
+  backdrop-filter: blur(5px);
 }
 
 #logo {
-    transition: 2s;
-    margin-right: 1rem;
+  transition: 2s;
+  margin-right: 1rem;
 }
 
-div, body {
-    transition: .4s ease;
+#logo:hover {
+  transform: scale(1.25, 1.25);
+}
+
+div,
+body {
+  transition: 0.2s ease;
+}
+
+#glitcher-text {
+  font-weight: bold;
+  background: linear-gradient(135deg, #007BFF 0%, #00FFA3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hidden {
-    opacity: 0;
-    transform: translateX(-20%);
-    filter: blur(5px);
+  opacity: 0;
+  transform: translateX(-20%);
+  filter: blur(5px);
 }
 
 .shown {
-    transition: .5s;
-    opacity: 1;
-    transform: translateX(0%);
-    filter: blur(0);
+  transition: 0.5s;
+  opacity: 1;
+  transform: translateX(0%);
+  filter: blur(0);
 }
 
 .switch-logo {
-    width: 2rem;
-    height: 2rem;
-    transition: .5s ease-in-out;
-    background: url(images/moon.svg) no-repeat;
+  width: 2rem;
+  height: 2rem;
+  transition: 0.5s ease-in-out;
+  background: url(images/moon.svg) no-repeat;
 }
 
 .switch-logo:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 h1,
 span {
-    transition: .2s ease!important;
+  transition: 0.2s ease !important;
 }
 
 .navbar-brand {
-    margin: 0;
+  margin: 0;
+}
+
+#tw {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
